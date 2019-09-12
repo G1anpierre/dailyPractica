@@ -1,0 +1,8 @@
+body{
+    background: gray;
+}
+
+.container{
+    display: flex;
+    background: rebeccapurple;
+}
