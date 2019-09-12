@@ -4,5 +4,20 @@ body{
 
 .container{
     display: flex;
-    background: rebeccapurple;
+   flex-wrap: wrap;
+}
+
+.box{
+    background: #cc0042;
+    flex-basis: 100px;
+    flex-grow: 1 ;
+    color: white;
+    font-family: Helvetice;
+    padding: 20px;
+    transition: 0.1s background;
+}
+
+.middle{
+    background: #b20039;
+    flex-shrink: 1;
 }
