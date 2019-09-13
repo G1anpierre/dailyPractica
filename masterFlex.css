@@ -8,10 +8,12 @@
 .container {
     background: #ccc;
     padding: 10px;
+    height: 1000px;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    min-height: 40vh;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 50vh;
 }
 
 .item {
@@ -20,6 +22,21 @@
     color: white;
     padding: 5px;
     margin: 10px;
-    flex-basis: 80px;
+    flex-grow: 1;
+    flex-basis: 70px;
     
+}
+
+.i2 {
+    height: 200px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+.i4 {
+    /* font-size: 90px; */
+    align-self: center;
+    order: -1;
+    flex-grow: 2;
+    flex-shrink: 3;
 }
