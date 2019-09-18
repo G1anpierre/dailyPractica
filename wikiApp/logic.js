@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 function processResult(apiResult){
   $('.display-result').empty();
- for (var i = 0; i < apiResult.query.search.length; i++){
+  for(var i = 0; i < apiResult.query.search.length; i++){
 
       $('.display-result').append('<li>'+ '<strong>'+ '<a href="https://en.wikipedia.org?curid=' + apiResult.query.search[i].pageid + '"'  +'>'+apiResult.query.search[i].title + '</a>'+ '</strong>'+ '</li>');
       $('.display-result').append('<p>' + apiResult.query.search[i].snippet + '</p>');
