@@ -1,0 +1,78 @@
+/* Pre Setup */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 8rem;
+}
+h3 {
+    font-size: 4rem;
+}
+
+header, footer {
+    background: #2B2D42;
+    color: #8D99AE;
+}
+
+.profile-img {
+    width: 15rem;
+    border-radius: 50%;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.content-wrap {
+    max-width: 95rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.content-wrap.content1{
+    display: flex;
+}
+
+.two-columns {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.two-column-element {
+    flex-basis: 80rem;
+    /* background: orangered; */
+}
+
+.work {
+    background: #8D99AE;
+    
+}
+
+.education {
+    background: #EDF2F4;
+    padding-bottom: 3rem;
+}
+
+
+
