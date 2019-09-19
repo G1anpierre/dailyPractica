@@ -59,9 +59,14 @@ header, footer {
     margin-top: 2rem;
 }
 
-.two-column-element {
-    flex-basis: 80rem;
+
+.two-column-element-left {
+    flex: 1;
     /* background: orangered; */
+}
+
+.two-column-element-right {
+    flex: 2;
 }
 
 .work {
