@@ -6,12 +6,28 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%%
+    font-size: 62.5%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
 
+  h1 {
+      font-size: 4rem;
+  }
+
+  h3 {
+      font-size: 3rem;
+  }
+
+  h4 {
+      font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: .4rem;
+  }
 
   .column-layout {
       display: flex;
@@ -43,7 +59,7 @@ html {
     
 }
 
-@media (min-width: 800px) {
+@media (min-width: 80rem) {
     .call-outs-container {
         display: flex;
         justify-content: space-between;
@@ -54,7 +70,7 @@ html {
     
 }
 
-@media (max-width: 800px) {
+@media (max-width: 80rem) {
     .column-layout {
         display: flex;
         flex-direction: column;
@@ -71,14 +87,16 @@ html {
 
     .second-a {
         min-height: 15rem;
+        
     }
     .second-b {
         min-height: 15rem;
+    
     }
 
 }
 
-.call-out {
+.sticker {
     padding: 2rem;
     margin-bottom: 3rem;
     flex-basis: 30%;
@@ -101,21 +119,21 @@ html {
 }
 
 .fixed-size {
-    width: 150px;
-    height: 100px;
-    background-color: #990b47;
+    width: 15rem;
+    height: 10rem;
+    background-color: #4666AB;
     color: #FFF;
-    line-height: 100px;
+    line-height: 10rem;
     text-align: center;
     font-weight: bold;
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 6rem;
+    margin-bottom: 10rem;
 }
 
 .banner {
-    height: 400px;
-    max-width: 700px;
-    margin: 40px auto 40px auto;
+    height: 40rem;
+    max-width: 70rem;
+    margin: 4rem auto 4rem auto;
     background-color: #2a2a2a;
     display: flex;
     justify-content: center;
@@ -124,15 +142,15 @@ html {
 
 .center-me {
     color: #FFF;
-    font-size: 50px;
+    font-size: 5rem;
     
     background: orangered;
 }
 
 .equal-height-container {
     display: flex;
-    width: 950px;
-    margin: 50px auto;
+    width: 95rem;
+    margin: 5rem auto;
 }
 
 .first {
@@ -150,15 +168,25 @@ html {
 
 .second-a {
     background: rebeccapurple;
+    color: #FFF;
+    line-height: 10rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
     flex: 1;
 }
 
 
 .second-b {
     background: green;
+    color: #FFF;
+    line-height: 10rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
     flex: 1;
 }
 
-.call-out:nth-child(1) {background-color: #c0dbe2;}
-.call-out:nth-child(2) {background-color: #cdf1c3;}
-.call-out:nth-child(3) {background-color: #ccb9da;}
+.sticker:nth-child(1) {background-color: #FDCFB3;}
+.sticker:nth-child(2) {background-color: #CEC8E4;}
+.sticker:nth-child(3) {background-color: #F9F7E8;}
