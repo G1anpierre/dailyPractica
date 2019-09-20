@@ -8,16 +8,39 @@
     <title>Score Tracker</title>
 </head>
 <body>
+    <main class="general">
+        <section class="scores">
+                <div class="surround home"> 
+                    <h1>Home</h1>
+                    <span id="score1">0</span> 
+                </div>
+                <div class="surround away">
+                    <h1>Away</h1>
+                    <span id="score2">0</span>
+                </div>
+        </section>
+        <section class="winner">
+            <h2 id="message">vs.</h2>
+        </section>
+        <section class="actions">
+                <button class="boton1">Player 1</button>
+                <button class="boton2">Player 2</button>
+                <button class="reset">Reset</button>
+        </section>
 
-    <h1> <span id="score1">0</span> to <span id="score2">0</span></h1>
+        <section class="winningSettings">
+                <p>Choose the Max/Winner Score</p>
+                <span id="final"></span>
+                <input name="inicial" type="number" > 
+        </section>
 
-    <p>Playing to <span id="final"></span></p>
+        
+        
 
-    <input name="inicial" type="number" > 
-    <button class="boton1">Player 1</button>
-    <button class="boton2">Player 2</button>
-    <button class="reset">Reset</button>
-    
+        
+
+        
+    </main>
 
     <script  type="text/javascript" src="logictex.js"></script>
 </body>

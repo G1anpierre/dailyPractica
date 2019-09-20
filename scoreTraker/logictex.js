@@ -6,17 +6,22 @@ const restart = document.querySelector(".reset");
 
 /* Show screen, Scores for left and right */
 
-let marcador1 = document.getElementById("score1");
-let marcador2 = document.getElementById("score2");
+const marcador1 = document.getElementById("score1");
+const marcador2 = document.getElementById("score2");
 
 /* Show, Playing to */
 
-let maxScore = document.getElementById("final");
+const maxScore = document.getElementById("final");
 
 /* Input Selector  */
 
-let entrada = document.querySelector("input");
+const entrada = document.querySelector("input");
 
+/* Selector for the winner Celebration */
+
+const homeS = document.querySelector(".home");
+const awayS = document.querySelector(".away");
+const winMessage = document.querySelector("#message");
 
 /* Initialize Values */
 
@@ -45,9 +50,10 @@ push1.addEventListener("click", function(){
       valor1++;
       marcador1.textContent = valor1;
       if(valor1 == winningScore){
-          /* QUe pase la magia */
-          marcador1.classList.add("champion");
-          console.log("Gano 1");
+          
+          homeS.classList.add("champion");
+          console.log("Gano home");
+          winMessage.textContent = "Home won!";
           push1.disabled = true;
           push2.disabled = true;
       }
@@ -61,9 +67,10 @@ push2.addEventListener("click", function(){
        valor2++;
        marcador2.textContent = valor2;
        if(valor2 == winningScore){
-           /* Que pase la magia */
-           marcador2.classList.add("champion");
-           console.log("Gano 2");
+          
+           awayS.classList.add("champion");
+           console.log("Gano away");
+            winMessage.textContent = "Away won!";
            push1.disabled = true;
            push2.disabled = true;
        }
@@ -78,8 +85,9 @@ restart.addEventListener("click", function(){
     marcador1.textContent = valor1;
     marcador2.textContent = valor2;
     maxScore.textContent = winningScore;
-    marcador1.classList.remove("champion");
-    marcador2.classList.remove("champion");
+    winMessage.textContent = "vs.";
+   homeS.classList.remove("champion");
+   awayS.classList.remove("champion");
     push1.disabled = false;
     push2.disabled = false;
 });
