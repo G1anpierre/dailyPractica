@@ -1,0 +1,85 @@
+
+/*  buttones */
+const push1 = document.querySelector(".boton1");
+const push2 = document.querySelector(".boton2");
+const restart = document.querySelector(".reset");
+
+/* Show screen, Scores for left and right */
+
+let marcador1 = document.getElementById("score1");
+let marcador2 = document.getElementById("score2");
+
+/* Show, Playing to */
+
+let maxScore = document.getElementById("final");
+
+/* Input Selector  */
+
+let entrada = document.querySelector("input");
+
+
+/* Initialize Values */
+
+let valor1 = 0;
+let valor2 = 0;
+
+/* Max Num to play */
+
+let winningScore = 0;
+
+
+/* Event Listeners and logic   */
+
+entrada.addEventListener("change", function(){
+    maxScore.textContent = entrada.value ;
+    winningScore = parseInt(entrada.value) ;
+    push1.disabled = false;
+    push2.disabled = false;
+});
+
+
+
+push1.addEventListener("click", function(){
+    
+    if(valor1 < winningScore){
+      valor1++;
+      marcador1.textContent = valor1;
+      if(valor1 == winningScore){
+          /* QUe pase la magia */
+          marcador1.classList.add("champion");
+          console.log("Gano 1");
+          push1.disabled = true;
+          push2.disabled = true;
+      }
+    }
+    
+});
+
+push2.addEventListener("click", function(){
+
+    if(valor2 < winningScore){
+       valor2++;
+       marcador2.textContent = valor2;
+       if(valor2 == winningScore){
+           /* Que pase la magia */
+           marcador2.classList.add("champion");
+           console.log("Gano 2");
+           push1.disabled = true;
+           push2.disabled = true;
+       }
+    }
+});
+
+restart.addEventListener("click", function(){
+    valor1 = 0;
+    valor2 = 0;
+    winningScore = 0;
+    entrada.value = 0;
+    marcador1.textContent = valor1;
+    marcador2.textContent = valor2;
+    maxScore.textContent = winningScore;
+    marcador1.classList.remove("champion");
+    marcador2.classList.remove("champion");
+    push1.disabled = false;
+    push2.disabled = false;
+});
