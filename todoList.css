@@ -1,5 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 li {
     border: 2px solid red;
+    flex-basis: 40%;
+    opacity: 0.7;
 }
 
 #special {
@@ -9,4 +18,17 @@ li {
 .completed {
     text-decoration: rgb(127, 140, 255);
     text-decoration: line-through;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.green {
+    color: green;
+    opacity: 1;
+}
+
+.black {
+    color: black;
 }
