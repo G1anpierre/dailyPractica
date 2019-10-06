@@ -1,0 +1,41 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navvar ul {
+    height: 88%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+nav ul li {
+    line-height: 7rem;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+
+}
