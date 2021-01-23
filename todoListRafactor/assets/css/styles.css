@@ -1,0 +1,53 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+.container {
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 36rem;
+
+    border: .2rem solid black;
+    height: 70vh;
+}
+
+.container h1 {
+    font-size: 3.2rem;
+}
+
+.container ul li {
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Event Listener Classes */
+
+.mark {
+    opacity: .5;
+    text-decoration: line-through;
+}
+
+.over {
+    font-style: italic;
+}
+
+.delete {
+    background: rebeccapurple;
+}
